@@ -1,0 +1,1522 @@
+/* ====================================================
+  Template Name: Moniha html template by Azijul
+  Template URI: http://www.abcdev.com/
+  Description: Moniha html template by Azijul
+
+  Author: HM Azijul
+  Author URI: http://www.hmazijul.com
+  version: 1.0
+==================================================== */
+
+/* CSS Index
+------------------------------------
+01. template default css
+02. section default css
+03. header css
+04. home slider css
+05. gallery-area css 
+06. 06. post css
+07. sidebar-widget css
+08. footer css
+
+09. home-02 css
+10. home-03 css
+11. home-04 css
+12. about page css
+13. gallery page css
+14. single post css
+15. contact page css
+
+*/
+
+/* ====================================================
+  Google Fonts
+==================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+
+/* ..................................
+ 01. template default css 
+.................................. */
+body {
+  font-family: 'Abhaya Libre', serif;
+  font-size: 18px;
+  /* line-height: 29px; */
+  font-weight: 400;
+}
+
+p {
+  color: #636262;
+}
+
+span a,
+.button {
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+.btn:focus {
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Abhaya Libre', serif;
+  font-size: 27px;
+  /* line-height: 45px; */
+  font-weight: 700;
+  color: #2b2b2b;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #ff3f34;
+}
+
+.form-control:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+/* ====================================================
+   Author's custom styles
+   ==================================================== */
+
+/*...................................
+    02. section default css
+................................... */
+
+.section-pad-btm {
+  padding-bottom: 70px;
+}
+
+.sidebar-pad-btm {
+  padding-bottom: 40px;
+}
+
+.section-btn {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ff3f34;
+  border: 2px solid #ff3f34;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.section-btn:hover {
+  background: rgba(255, 61, 51, 0.72);
+  border: 2px solid rgba(255, 255, 255, 0.84);
+  transition: .3s;
+  color: #fff;
+}
+
+.page-title {
+  margin: 50px 0 38px 0;
+}
+
+.page-title h2 {
+  font-size: 38px;
+  color: #2b2b2b;
+  font-weight: 400;
+  text-transform: capitalize;
+  border-bottom: 1px solid #eb2f06;
+  padding-bottom: 5px;
+}
+
+.page-title h6 {
+  font-size: 16px;
+  color: #2b2b2b;
+  text-transform: capitalize;
+}
+
+.page-title span {
+  font-size: 16px;
+  color: #2b2b2b;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 10px 15px;
+  border-radius: 22px;
+  background-color: #f2f2f2;
+  margin-top: 2%;
+  display: inline-block;
+}
+
+/*...................................
+    03. header css
+................................... */
+/* header-topbar */
+.header-topbar {
+  background-color: #f6f5f5;
+  border-bottom: 1px solid #cbc6c6;
+}
+
+.topbar-left ul li a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  color: #2b2b2b;
+  line-height: 45px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 0 10px;
+  transition: .3s;
+}
+
+.topbar-left ul li a:hover {
+  background-color: #eb2f06;
+  color: #fff;
+}
+
+.topbar-right {
+  text-align: right;
+}
+
+.topbar-right a i {
+  font-size: 15px;
+  color: #9b9b9b;
+  padding: 15px;
+  text-align: center;
+}
+
+.topbar-right a i:hover,
+.topbar-right a i.active {
+  background-color: #eb2f06;
+  color: #fff;
+}
+
+/* logo css */
+header .logo {
+  text-align: center;
+  padding: 40px 0 38px 0;
+}
+
+.logo p {
+  font-size: 13px;
+  letter-spacing: 3px;
+  color: #2b2b2b;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 5px;
+  padding: 0;
+}
+
+/* navbar css */
+.navigation-bar {
+  background-color: #333333;
+  color: #fff;
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.navigation-bar span.nav-icon {
+  color: #fff;
+}
+
+.navigation-bar ul li {
+  padding: 0 15px;
+  border-left: 1px solid #5e5e5e;
+}
+
+.navigation-bar ul li:last-child {
+  border-right: 1px solid #5e5e5e;
+}
+
+.navigation-bar ul li a {
+  font-size: 13px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline;
+}
+
+.navigation-bar ul li a:hover {
+  color: #ff3f34;
+
+}
+
+.navigation-bar ul li a.active {
+  color: #ff3f34;
+}
+
+/* nav dropedown css */
+.navigation-bar .pages-dropdown {
+  background: transparent;
+  margin-top: 11%;
+}
+
+.navigation-bar .dropdown-menu a {
+  padding: 10px 12px;
+  background-color: #333333;
+  border-bottom: 1px solid #5e5e5e;
+  display: block;
+}
+
+.navigation-bar .dropdown-menu a:last-child {
+  border: none;
+}
+
+.dropdown-menu.pages-dropdown.show {
+  border: none;
+}
+
+/* search bar css */
+.search-box {
+  position: relative;
+}
+
+.search-box::before {
+  position: absolute;
+  content: '';
+  top: 7px;
+  left: 0;
+  width: 1px;
+  height: 28px;
+  background-color: #5e5e5e;
+}
+
+.search-box:hover::before {
+  opacity: 0;
+}
+
+.search-btn {
+  text-decoration: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .3s;
+}
+
+.search-btn:hover {
+  background: #ff3f34;
+  color: #fff;
+}
+
+.search-box:hover>.search-text {
+  width: 240px;
+  padding-left: 15px;
+}
+
+.search-text ::placeholder {
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.search-text {
+  float: left;
+  background: #fff;
+  border: none;
+  outline: none;
+  padding: 0;
+  line-height: 40px;
+  width: 0px;
+  transition: .6s;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+/* ..................................
+ 04. home slider css 
+.................................. */
+.slider-item {
+  background: #cbc6c6;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  margin-top: 45px;
+  position: relative;
+}
+
+.slider-item-01 {
+  background-image: url(../images/home-page/home-slider-1.jpg);
+}
+
+.slider-item-02 {
+  background-image: url(../images/home-page/home-slider-1.jpg);
+}
+
+.slider-item-03 {
+  background-image: url(../images/home-page/home-slider-1.jpg);
+}
+
+.home-slider .slider-content {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 50px 0;
+  color: #fff;
+  width: 550px;
+  background: rgba(0, 0, 0, 0.5);
+
+}
+
+.home-slider .slider-content h5 {
+  font-size: 12px;
+  color: #fff;
+  font-family: "Montserrat";
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.home-slider .slider-content h1 {
+  font-size: 26px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 8px 0 6px 0;
+}
+
+.home-slider .slider-content p {
+  font-size: 11px;
+  color: #fff;
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-style: italic;
+}
+
+.home-slider .section-btn {
+  font-size: 10px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.home {
+  position: relative;
+}
+
+.prev-main,
+.next-main {
+  position: absolute;
+  font-size: 40px;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 10px 25px;
+}
+
+.prev-main {
+  left: 10%;
+  top: 50%;
+}
+
+.next-main {
+  right: 10%;
+  top: 50%;
+}
+
+.prev-main:hover,
+.next-main:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* ..................................
+ 05. gallery-area css 
+.................................. */
+.gallery-area {
+  padding: 30px 0 65px 0;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gallery-item:hover .gallery-content {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+}
+
+.gallery-item .gallery-content {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  bottom: 20px;
+  right: 20px;
+  border: 1px solid #eb2f06;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.gallery-area .section-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ============== main-content area css ============== */
+
+/* ..................................
+ 06. post css 
+.................................. */
+#main-content img {
+  cursor: pointer;
+}
+
+.post {
+  margin-bottom: 40px;
+  overflow-x: hidden;
+}
+
+.post-category {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #ff3f34;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  display: block;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.post-title {
+  font-size: 27px;
+  color: #2b2b2b;
+  font-weight: 700;
+  text-transform: capitalize;
+  text-align: center;
+  display: block;
+  padding-top: 10px;
+}
+
+.post-image {
+  padding-top: 30px;
+}
+
+.post-image:hover {
+  transform: scale(1.03);
+  transition: 1s;
+}
+
+.post-three-image img:first-child {
+  padding-bottom: 16px;
+}
+
+.post-three-image .col-md-6 {
+  padding: 0 8px;
+}
+
+/* post video */
+.post .video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+.post .video-wrapper iframe {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* post meta */
+.post-meta {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: capitalize;
+  font-size: 13px;
+  color: #a19e9d;
+  cursor: pointer;
+  margin-bottom: -1%;
+}
+
+.post-meta p {
+  display: inline-block;
+  padding: 30px 15px 0px 15px;
+}
+
+.post-meta span {
+  color: #ff3f34;
+  font-weight: 500;
+}
+
+.recent-clap-count {
+  background: #ff3f34;
+  color: #fff;
+  height: 38px;
+  width: 38px;
+  line-height: 38px;
+  display: block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 15% 0 0 23%;
+}
+
+.clap-count {
+  color: #bdbcbc;
+  display: block;
+  text-align: center;
+  margin-top: 22%;
+}
+
+.clap-count:hover {
+  color: #ff3f34;
+  cursor: pointer;
+}
+
+.clap-icon {
+  display: inline-block;
+  border: 1px solid #bdbcbc;
+  height: 60px;
+  width: 60px;
+  line-height: 55px;
+  text-align: center;
+  border-radius: 50%;
+  margin: 5% 0 0 23%;
+}
+
+.clap-icon:hover {
+  background-color: rgba(189, 188, 188, 0.25);
+  border: 1px solid #ff3f34;
+  cursor: pointer;
+}
+
+.post-text p:first-child::first-letter {
+  font-size: 38px;
+  color: #2b2b2b;
+}
+
+.read-more {
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #eb2f06;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.post-footer {
+  border: 1px solid #eeeeee;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+.post-footer a {
+  font-size: 13px;
+  color: #2b2b2b;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  margin: 0 15% 0 18%;
+}
+
+.post-footer a:hover {
+  color: #eb2f06;
+}
+
+.post-footer ul {
+  display: inline-block;
+  font-size: 13px;
+  color: #2b2b2b;
+  margin: 0 5% 0 22%;
+}
+
+.post-footer ul li a {
+  padding: 10px;
+  border: 1px solid #fff;
+}
+
+.post-footer ul li a:hover {
+  border: 1px solid #eb2f06;
+  transition: .3s;
+}
+
+/* post-navigation(previous-next options) css */
+.post-navigation,
+.post-navigation ul {
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #787777;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  display: inline;
+}
+
+.post-navigation .previous {
+  margin-right: 4%;
+}
+
+.post-navigation .next {
+  margin-left: 5%;
+}
+
+.post-navigation .previous:hover,
+.post-navigation .next:hover {
+  color: #eb2f05;
+}
+
+.post-navigation ul li a {
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  color: #787777;
+  margin: 0 5px;
+  transition: .5s;
+  display: inline-block;
+}
+
+.post-navigation ul li a:hover,
+.post-navigation ul li a.active {
+  background-color: #eb2f05;
+  color: #fff;
+}
+
+/* ..................................
+ 07. sidebar-widget css 
+.................................. */
+/* sidebar defult css */
+.m-btm-35 {
+  margin-bottom: 35px;
+}
+
+.sidebar-title {
+  font-size: 24px;
+  color: #2b2b2b;
+  font-weight: 400;
+  text-transform: capitalize;
+  position: relative;
+  margin: 40px 0 40px 0;
+}
+
+.sidebar-title::before {
+  position: absolute;
+  content: '';
+  bottom: -158%;
+  left: 38%;
+  width: 60px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #ff3f34;
+  margin-bottom: 35px;
+}
+
+/* post-search-box css */
+.post-search-box input {
+  border-radius: 50px;
+  border: 1px solid #dfdfdf;
+  width: 270px;
+  height: 53px;
+  padding-left: 30px;
+}
+
+.post-search-box input:focus {
+  outline: 0;
+}
+
+.post-search-box input::placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-style: italic;
+}
+
+.post-search-box {
+  position: relative;
+}
+
+.post-search-box .search-icon {
+  position: absolute;
+  right: -18px;
+  bottom: 51%;
+  padding-left: 20px;
+  transform: translate(-100%, 50%);
+  border-left: 1px solid #bcb9b9;
+}
+
+.search-icon i {
+  font-size: 12px;
+  color: #bcb9b9;
+}
+
+/* s-about-me (sidebar about me) css */
+.s-about-me {
+  text-align: center;
+  padding: 0 10px;
+}
+
+.s-author-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color: #bdbcbc;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.s-author-name span {
+  color: #ff3f34;
+  text-transform: capitalize;
+}
+
+.ab-social {
+  font-size: 12px;
+  line-height: 22px;
+  color: #9b9b9b;
+  margin-top: 25px;
+}
+
+.ab-social li {
+  padding: 0 10px;
+  border-right: 1px solid #dfdcdc;
+}
+
+.ab-social li:last-child {
+  border: none;
+}
+
+/* s-instagram (sidebar instagram) css */
+.insta-img a img {
+  width: 30%;
+  margin-bottom: 5px;
+}
+
+/* s-video-post (sidebar video post) css */
+.s-video-post .vid-img {
+  background-image: url(../images/sidebar/video-thmub.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 325px;
+}
+
+.s-video-post .vid-img h5 {
+  font-size: 15px;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 50%;
+  display: inline-block;
+}
+
+/* s-categories (sidebar categories) css */
+.s-categories-item li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-top: 1px solid #dfdcdc;
+  font-weight: 600;
+}
+
+.s-categories-item li:last-child {
+  border-bottom: 1px solid #dfdcdc;
+}
+
+.s-categories-item li span {
+  font-size: 13px;
+  color: #2b2b2b;
+}
+
+.s-categories-item li a {
+  font-size: 13px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  line-height: 30px;
+  display: inline-block;
+  color: #636262;
+  border: 1px solid #e2dfdf;
+  text-align: center;
+}
+
+.s-categories-item li a:hover {
+  background-color: #eb2f05;
+  color: #fff;
+  transition: .3s;
+}
+
+/* s-most-popular (most popular) css */
+.s-most-popular-item {
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+
+.s-most-popular-item h6 {
+  font-size: 17px;
+  color: #2b2b2b;
+  font-weight: 600;
+  margin: 5px 0 0 -10px;
+}
+
+.s-most-popular-item span {
+  font-size: 10px;
+  color: #a19e9d;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  margin-top: 5px;
+  margin-left: -10px;
+}
+
+.popular-item-04 {
+  margin-top: 15px;
+}
+
+/* s-newsletter (My Newsletter) css */
+.s-newsletter input[type="text"] {
+  width: 237px;
+  height: 46px;
+  border-radius: 23px;
+  background-color: #efefef;
+  padding-left: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  color: #aeadad;
+  font-weight: 300;
+  border: none;
+}
+
+.s-newsletter input[type="text"]:focus,
+.s-newsletter input[type="button"]:focus {
+  outline: 0;
+}
+
+.s-newsletter input[type="button"] {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 237px;
+  height: 46px;
+  border-radius: 23px;
+  background-color: #eb2f06;
+  color: #fff;
+  border: none;
+  margin-top: 10px;
+  border: 1px solid transparent;
+}
+
+.s-newsletter input[type="button"]:hover {
+  background: #fff;
+  color: #eb2f06;
+  border: 1px solid #eb2f06;
+
+}
+
+/* s-tags (sidebar tags) css */
+.s-tags ul li {
+  padding: 1px 5px;
+  border-radius: 5px;
+  background-color: #efefef;
+  margin: 5px 3px;
+}
+
+.s-tags ul li a {
+  font-size: 11px;
+  color: #a9a6a6;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.s-tags ul li a:hover {
+  color: #eb2f05;
+}
+
+/* ..................................
+ 08. footer css 
+.................................. */
+footer {
+  margin-top: 4.5%;
+  padding: 60px 0;
+  background-color: #f1f0f0;
+}
+
+.footer-top {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dfdcdc;
+}
+
+.footer-top .footer-nav {
+  margin-top: 3%;
+  float: right;
+}
+
+.footer-nav ul li {
+  font-size: 13px;
+  color: #2b2b2b;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 12px;
+}
+
+.footer-nav ul li:hover {
+  color: #eb2f05;
+}
+
+.footer-bottom {
+  padding-top: 20px;
+}
+
+.footer-bottom .fo-social ul li {
+  font-size: 12px;
+  color: #2b2b2b;
+  padding-right: 15px;
+}
+
+.footer-bottom .fo-social ul li:hover {
+  color: #eb2f05;
+}
+
+.footer-bottom .fo-copyright {
+  font-size: 13px;
+  color: #2b2b2b;
+  text-transform: capitalize;
+  float: right;
+}
+
+.footer-bottom .fo-copyright span {
+  font-weight: 600;
+  color: #000;
+}
+
+/*////// ======================= all page css start ======================= //////*/
+
+/*////// ======================= 09. home-02 css ======================= //////*/
+/*...................................
+         home-02-slider css
+................................... */
+.home-02-slider .slider-content {
+  position: absolute;
+  content: '';
+  bottom: 6.5%;
+  left: 50%;
+  transform: translate(-50%, 15%);
+  text-align: center;
+  padding: 6% 0;
+  color: #fff;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.home-02 .prev-main {
+  left: 5%;
+  top: 75%;
+}
+
+.home-02 .next-main {
+  right: 5%;
+  top: 75%;
+}
+
+/*////// ======================= 10. home-03 css ======================= //////*/
+/*...................................
+         home-03-slider css
+................................... */
+.home-3-slider-item {
+  background: #cbc6c6;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 65vh;
+  margin-top: 50px;
+  position: relative;
+}
+
+.home-3-slider-item::before {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.home-03-slider .slider-content {
+  position: absolute;
+  background: none;
+  bottom: 125px;
+  left: -15px;
+  transform: translate(10%, 100%);
+  text-align: left;
+  padding: 0 0 20% 0;
+}
+
+.home-03-slider .slider-item-01 {
+  background-image: url(../images/home-page/home-3-slider/01.jpg);
+}
+
+.home-03-slider .slider-item-02 {
+  background-image: url(../images/home-page/home-3-slider/02.jpg);
+}
+
+.home-03-slider .slider-item-03 {
+  background-image: url(../images/home-page/home-3-slider/03.jpg);
+}
+
+.home-03-slider .slider-item-04 {
+  background-image: url(../images/home-page/home-3-slider/04.jpg);
+}
+
+/*////// ======================= 11. home-04 css ======================= //////*/
+/*...................................
+       home-04-slider css
+................................... */
+/* home 04 start*/
+.home-04 {
+  margin-top: 40px;
+}
+
+.home-04 .home-04-content {
+  position: relative;
+  height: 50vh;
+  background-color: #a9a6a6;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-04 .home-04-content:hover {
+  cursor: pointer;
+}
+
+.home-04-content-01 {
+  background: url(../images/home-page/home-04/1.jpg);
+}
+
+.home-04-content-02 {
+  background: url(../images/home-page/home-04/2.jpg);
+}
+
+.home-04-content::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.65);
+  height: 100%;
+  width: 100%;
+}
+
+.home-04-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(115%, -50%);
+  text-align: center;
+}
+
+.home-04-text h5 {
+  font-size: 12px;
+  color: #fff;
+  font-family: "Montserrat";
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.home-04-text h1 {
+  font-size: 26px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 8px 0 6px 0;
+}
+
+.home-04-text p {
+  font-size: 11px;
+  color: #fff;
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-style: italic;
+}
+
+.home-04-text .section-btn {
+  font-size: 10px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/*////// ======================= 12. about page css ======================= //////*/
+.mt-3 {
+  margin-top: 3%;
+}
+
+.mt-4 {
+  margin-top: 4%;
+}
+
+.about-me-content .highlight-text {
+  background-color: #f3f3f3;
+  padding: 5% 10% 3% 10%;
+}
+
+.about-me-content .highlight-text p {
+  font-size: 20px;
+  color: #2b2b2b;
+  font-weight: 700;
+  text-align: center;
+}
+
+.about-me-content .author-signature {
+  text-align: center;
+  margin-top: 3%;
+}
+
+.about-me-content .author-social {
+  text-align: center;
+  margin-top: 1%;
+}
+
+.about-me-content .author-social ul li {
+  font-size: 14px;
+  color: #9b9b9b;
+  padding: 5px;
+}
+
+/*////// ======================= 13. gallery page css ======================= //////*/
+.gallery .gallery-text {
+  margin: 0 12.3% 3.5% 12.3%;
+}
+
+.gallery .gallery-text .author-intro {
+  margin: 0 20% 3% 20%;
+  font-size: 22px;
+  color: #908e8e;
+  font-weight: 400;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.gallery .gallery-text .author-intro strong {
+  color: #2b2b2b;
+}
+
+.gallery .gallery-grid .gallery-item {
+  padding-bottom: 30px;
+}
+
+/*////// ======================= 14. single post css ======================= //////*/
+.mr-3-perc {
+  margin-right: 2.5%;
+}
+
+.single-post .post h5 {
+  font-size: 27px;
+  color: #2b2b2b;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin: 45px 0 10px 0;
+}
+
+.post-quotation {
+  border-top: 1px dashed #cacaca;
+  ;
+  border-bottom: 1px dashed #cacaca;
+  ;
+  padding: 25px 12% 25px 0;
+  margin: 40px 0 45px 0;
+  text-align: center;
+}
+
+.post-quotation span {
+  font-size: 20px;
+  color: #2b2b2b;
+  font-weight: 700;
+}
+
+.single-post .post ol {
+  list-style: none;
+  counter-reset: single-post;
+  padding-left: 0;
+  margin: 25px 0 30px 0;
+}
+
+.single-post .post ol li {
+  counter-increment: single-post;
+  font-size: 18px;
+  color: #636262;
+  font-family: "Abhaya Libre";
+  font-weight: 400;
+}
+
+.single-post .post ol li:before {
+  content: counter(single-post) ". ";
+  color: #2b2b2b;
+  font-weight: 700;
+  display: inline-block;
+  height: 20px;
+  width: 25px;
+}
+
+.single-post .post ol li span {
+  font-size: 18px;
+  color: #2b2b2b;
+  font-weight: 700;
+}
+
+.single-post .post-comment h6 {
+  font-size: 21px;
+  color: #2b2b2b;
+  font-weight: 400;
+}
+
+.post-comment .comment-social {
+  margin-top: -10px;
+}
+
+.post-comment .comment-social li {
+  font-size: 13px;
+  margin-right: 10px;
+  color: #bbbbbb;
+  transition: .3s;
+}
+
+.post-comment .comment-social li:hover {
+  color: #eb2f06;
+}
+
+.single-post .also-like {
+  margin: 50px 0;
+}
+
+.single-post .also-like h6 {
+  font-size: 25px;
+  text-transform: capitalize;
+  color: #2b2b2b;
+  font-weight: 400;
+  text-align: center;
+}
+
+.single-post .also-like h3 {
+  font-size: 18px;
+  color: #2b2b2b;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-top: 12px;
+}
+
+.single-post .also-like p {
+  font-size: 11px;
+  color: #a19e9d;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.show-comments .comments-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.show-comments .comments-top a:first-child {
+  font-size: 15px;
+  color: #2b2b2b;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.show-comments .comments-top a i {
+  color: #eb2f06;
+  padding-right: 5px;
+}
+
+.comment-details {
+  border-bottom: 1px dashed #ddd;
+  padding: 35px 0 10px 0;
+}
+
+.show-comments .comment-details:last-child {
+  border: none;
+}
+
+.comment-details h6 {
+  font-size: 21px;
+  color: #2b2b2b;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.comment-details span {
+  font-size: 10px;
+  color: #a19e9d;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.comment-details p {
+  font-size: 15px;
+  color: #636262;
+  font-weight: 400;
+}
+
+.comment-details .reply-btn {
+  padding: 6px 12px;
+  border-radius: 2px;
+  background-color: #eb2f06;
+  font-size: 12px;
+  color: #fff;
+  border: 1px solid transparent;
+  transition: .3s;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+.comment-details .reply-btn:hover {
+  background: transparent;
+  color: #eb2f06;
+  border: 1px solid #eb2f06;
+}
+
+.write-reply {
+  margin-top: 50px;
+}
+
+.write-reply h5 {
+  font-size: 22px;
+  color: #2b2b2b;
+  text-transform: capitalize;
+  padding-bottom: 15px;
+}
+
+.write-reply p {
+  color: #636262;
+  font-size: 15px;
+}
+
+.write-reply p span {
+  color: #eb2f06;
+}
+
+.write-reply form .commen-btm input {
+  width: 260px;
+}
+
+.write-reply form .commen-btm {
+  float: left;
+}
+
+.write-reply .single-input {
+  margin-top: 5px;
+}
+
+.comment-btn {
+  font-size: 15px;
+  margin-top: 15px;
+  padding: 10px 10px;
+  border-radius: 3px;
+  background-color: #eb2f06;
+  border: 1px solid transparent;
+  color: #fff;
+}
+
+.comment-btn:hover {
+  background-color: transparent;
+  color: #eb2f06;
+  border: 1px solid #eb2f06;
+}
+
+/*////// ======================= 15. contact page css ======================= //////*/
+.contact-content .page-title {
+  margin: 50px 0 60px 0;
+}
+
+.single-input {
+  margin-top: 33px;
+}
+
+.single-input label {
+  display: block;
+  font-size: 14px;
+  color: #636262;
+  font-weight: 500;
+}
+
+.single-input label span {
+  color: #eb2f06;
+}
+
+.single-input input,
+.single-input textarea {
+  width: 270px;
+  height: 40px;
+  outline: none;
+  border: 1px solid #cacaca;
+  font-weight: 500;
+  padding: 5px 10px;
+}
+
+.single-input textarea {
+  width: 100%;
+  height: 225px;
+}
+
+.contact-content .section-btn {
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+
+.contact-content .section-btn:hover {
+  background-color: transparent;
+  color: #eb2f06;
+  border: 1px solid #eb2f06;
+}
+
+/* contact-02 css */
+.contact-02 .left {
+  margin-top: 20%;
+}
+
+.contact-02 .single-input input,
+.contact-02 .single-input textarea {
+  width: 100%;
+}
